@@ -12,10 +12,12 @@ contract TicTacToe {
         myaddress = msg.sender;
     }
     function fundmycontact()public payable{
+    //this sends the ethers 
         
     }
     function withdraw()public{
         myaddress.transfer(this.balance );
+        //this reseives the ethers 
     }
     
     function setmybool(bool _myboolArg)  public{
@@ -25,6 +27,7 @@ contract TicTacToe {
     }
         
     function getmybool() public view returns(bool){
+        //this returns the boolean value
         return mybool;
     }
     
